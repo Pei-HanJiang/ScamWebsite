@@ -13,11 +13,11 @@
       <img src="Icon.jpeg" height="50" width="50" />
       <p class="split">|</p>
       <div class="languages">
-        <button>
+        <button id="dropdownBtn">
           <img src="language.svg" width="15"/>
           <span class="text">English</span>
           <img src="drop-down.png" width="7" />
-        </button>
+      </button>   
       </div>
     </div>
 
@@ -25,9 +25,9 @@
       <p>Think it. Make it.<br/>
       <span class="exception"> Log in to your Notion account</span></p>
       <div class="ways_login">
-        <button><img src="Logo-google-icon-PNG.png" width="15px" /> Continue with Google</button>
-        <button><img src="apple.png" width="16px" /> Continue with Apple</button>
-        <button><img src="key.jpg" width="16px" /> Single sign-on (SSO)</button>
+        <a style="text-decoration:none;" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=offline&scope=profile%20email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&state=eyJjYWxsYmFja1R5cGUiOiJwb3B1cCIsImVuY3J5cHRlZFRva2VuIjoidjAyOmxvZ2luX3dpdGhfZ29vZ2xlOk5XY2FDbWc2c01aT00zQ2cwTERiLWxRS2wyaWw2SVBXTFhaWjVfV3g0YVBmQWJpUFhja1IxQzV6Sk9kRTRZdEFWUHJXTm9senRLUTRjdXduT0U0RHJoM2laX2kxZ1FkS1F3ZEMxeE9RcVlzNEUwcWp0ZGxBNXJWbUFQUXd2cDZGZnc4QyJ9&prompt=select_account&response_type=code&client_id=905154081809-858sm3f0qnalqd9d44d9gecjtrdji9tf.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fwww.notion.so%2Fgooglepopupcallback&service=lso&o2v=2&ddm=0&flowName=GeneralOAuthFlow"><button><img src="Logo-google-icon-PNG.png" width="15px" /> Continue with Google</button></a>
+        <a style="text-decoration:none;" href="https://appleid.apple.com/auth/authorize?client_id=notion.signin&nonce=4dba4dba38f04db388e08531943a2096e231564b3cb50c10&redirect_uri=https%3A%2F%2Fwww.notion.so%2Fapplepopupcallback&response_type=code&response_mode=form_post&scope=name%20email&state=eyJjYWxsYmFja1R5cGUiOiJyZWRpcmVjdCIsImVuY3J5cHRlZFRva2VuIjoidjAyOmFwcGxlX2F1dGhfZmxvdzpKdzM3aWFfUHVsSVlMc0lfbFZkVHFqbE1VNFgwQllxQ0o2aUhZeEZiSFRNWWtMSzhzdHE5ajJDY2YwTUR3TTBHVkJud25DNk8wUDFHNVoza2JXalZ1VXQtbldnRmlvb25kTG82TjhFajdCRGtDYS0zNjE0cjNmWkFFekppUjBmYkl6WUUiLCJlbmNyeXB0ZWROb25jZSI6InYwMjphcHBsZV9hdXRoX2Zsb3c6QkJ3ZjN4STNfNjlBdzFqX3NaNXlFdzNQRWM3Rk5HeHVGcUNIOUtBWmxMUE1RSXBLcTRBZUowSEJIRHRSdnI4ODBUd2tOYnpxbGpETFhQc0czTFltWDFNX1pXRWctVmFJazhyc1JGam0xYWZLSktfYk90OGtNbGZPQkt6VG9JM1lsX2xQeFRFVFluY1hWd19paE9SMSJ9"><button><img src="apple.png" width="16px" /> Continue with Apple</button></a>
+        <button id="ssoBtn"><img id="ssoImg" src="key.jpg" width="16px" /> Single sign-on (SSO)</button></a>
       </div>
       <div class="divider"></div>
       
@@ -37,7 +37,7 @@
         <span class="terms">Use an organization email to easily collaborate with<br/>
            teammates.</span>
       </div>
-      <button class="cBtn">Continue</button>
+      <button class="cBtn" id="conBtn">Continue</button>
     </div>  
 
     <div class="footer">
@@ -45,7 +45,7 @@
          invite you to a workspace
       using your email. By <br/>
       continuing, you acknowledge that you understand and<br/>
-      agree to the <span class="terms1">Terms&Conditions</span> and <span class="terms1">Privacy Policy</span>
+      agree to the <a style="text-decoration:none;" href="https://www.notion.so/notion/Personal-Use-Terms-of-Service-00e4e5d0f2b9411cbee6493f15779500"><span class="terms1">Terms&Conditions</span></a> and <a style="text-decoration:none;" href="https://www.notion.so/notion/Privacy-Policy-3468d120cf614d4c9014c09f6adc9091"><span class="terms1">Privacy Policy</span></a>
       </p>
     </div>
     <script src="script.js"></script>
